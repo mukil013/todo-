@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../todo-/style/main.css">
     <title>To-do</title>
+    <link rel="stylesheet" href="../todo-/style/main.css">
 </head>
 <body>
-    
+        <div class="container" >
+            <h1>To-Do</h1>
+            <div class="innerbox"  oninput="moving_bg()">
+                <input type="text" id="task-in"> 
+                <img src="../todo-/media/plus-solid.svg" id="add">
+            </div>
+        </div>
+        <div class="container1">
+            <div class="history"></div>
+        </div>
 </body>
+<script src="../todo-/js/app.js"></script>
 </html>

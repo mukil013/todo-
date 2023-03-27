@@ -4,8 +4,72 @@
     box-sizing: border-box;
 }
 body{
+    overflow: hidden;
+    display: grid;
+    place-content: center;
     height: 100vh;
     width: 100vw;
-    background-image: url("../media/pexels-tom-swinnen-2249961.jpg");
-    background-size: cover;
+    background-image: linear-gradient(transparent,black),url("../media/pexels-tom-swinnen-2249961.jpg");
+    background-position: center;
+    background-size: 100%;
+    transition: .2s all ease-in-out;
+}
+.container{
+    z-index: 999;
+    position: relative;
+    top: 0%;
+    height: 12rem;
+    width: 35rem;
+    background-color: #ffffff1d;
+    backdrop-filter: blur(5rem);
+    border-radius: 1rem;
+    transition: .2s all ease-in-out;
+}
+h1{
+    padding: 1rem;
+    font-family: poppins;
+    color: #222;
+}
+.innerbox{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: .5s all ease;
+}
+#task-in:focus{
+    outline: .2rem solid #222;
+}
+#add{
+    height: 1.3rem;
+}
+#task-in{
+    border-radius: .5rem;
+    border: none;
+    height: 30%;
+    width: 80%;
+    resize: vertical;
+    overflow: auto;
+    outline: none;
+    padding: .5rem;
+    background-color: #e1e1e1;
+}
+.container1{
+    position: absolute;
+    bottom: -80%;
+    height: 70%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    transition: .5s all ease-in-out;
+}
+.history{
+    display: flex;
+    height: 65vh;
+    width: 95vw;
+    backdrop-filter: blur(1rem);
+    background-color: #e1e1e127;
+    background-attachment: fixed;
+    border-radius: 1rem;
 }
