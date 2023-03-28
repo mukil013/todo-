@@ -9,8 +9,9 @@ body{
     place-content: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(transparent,black),url("../media/pexels-tom-swinnen-2249961.jpg");
+    background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.458)),url("../media/pexels-tom-swinnen-2249961.jpg");
     background-position: center;
+    background-repeat: no-repeat;
     background-size: 100%;
     transition: .2s all ease-in-out;
 }
@@ -38,13 +39,16 @@ h1{
     gap: 1rem;
     transition: .5s all ease;
 }
-#task-in:focus{
+#taskin:focus{
     outline: .2rem solid #222;
 }
 #add{
+    height: 1rem;
+}
+#addbtn{
     height: 1.3rem;
 }
-#task-in{
+#taskin{
     border-radius: .5rem;
     border: none;
     height: 30%;
@@ -72,4 +76,11 @@ h1{
     background-color: #e1e1e127;
     background-attachment: fixed;
     border-radius: 1rem;
+}
+.loadingScreen{
+    z-index: 10000;
+    position: absolute;
+    height: 100rem;
+    width: 100rem;
+    background-color: #e1e1e1;
 }
