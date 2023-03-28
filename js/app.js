@@ -11,8 +11,8 @@ function movingBg(){
     if(input === document.activeElement){
         background.style.backgroundSize = "200%";
         background.style.backdropFilter = "blur(5rem)";
-        container.style.top = "-130%";
-        card.style.bottom = "1%";
+        container.style.top = "-34vh";
+        card.style.bottom = "1vh";
         console.log("focused");
     }else{
         background.style.backgroundSize = "100%";
